@@ -133,6 +133,7 @@ select {
 }
 
 .container-name {
+    overflow: hidden;
     width: 70%;
 }
 
@@ -160,7 +161,7 @@ select {
         padding: 0;
     }
     .container-name {
-        width: 60%;
+        width: 50%;
     }
     .story-mony {
         width: 150px;
