@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Bank</title>
+	<link rel="stylesheet" type="text/css" href="style/reset-styles.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<h1 class="logo-name">Банк</h1>
+			<div class="admin">
+				<div class="signin">
+					<a href="#">Войти</a>
+				</div>
+				<div class="user">
+					<img class="img-user" src="images/user.png" alt="">
+					<p>username</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="logo">
+			<div class="logo-name">
+				<h2>Карта банка</h2>
+				<div class="logo-namber">
+					<label>0000 0000 0000 0000</label>
+					<label>&nbsp;&nbsp;&nbsp;</label>
+				</div>
+				<div class="logo-namber">
+					<label>Баланс: 0 000 SYM</label>
+				</div>
+			</div>
+			<div class="card">
+				<a href="##"><img class="img-card" src="images/reload2.png" alt=""></a>
+				<a href="###"><img class="img-card" src="images/settings2.png" alt=""></a>
+			</div>
+		</div>
+		<div class="period">
+			<label>Период:</label>
+			<select class="selcls year" name="year">
+				<option value="2024">2024</option>
+				<option value="2023">2023</option>
+				<option value="2022">2022</option>
+				<option value="2023">2023</option>
+				<option value="2022">2022</option>
+			</select>
+			<select class="selcls month" name="month">
+				<option value="Август">Август</option>
+				<option value="Июль">Июль</option>
+				<option value="Июнь">Июнь</option>
+				<option value="Май">Май</option>
+				<option value="Апрель">Апрель</option>
+			</select>
+			<button class="search">Поиск</button>
+		</div>
+		<div class="story">
+			<div class="story-head">
+				<p>Описание платежа</p>
+				<div class="story-mony">
+					<p>Сумма, SYM</p>
+					<p>Остаток, SYM</p>
+				</div>
+			</div>
+			<div class="oneday">
+				<div class="date-transaction">2 августа</div>
+				<!-- ------ одна транзакция------------------------ -->
+				<div class="one-transaction">
+					<div class="main-info-transaction">
+						<div>
+							<label class="open-trsnsaction">∧</label>
+							<label class="time-transaction">11:30</label>
+							<label class="name-transaction">Вася Пупкин ∨</label>
+						</div>
+						<div class="story-mony">
+							<p>+ 2 000</p>
+							<p>2 000</p>
+						</div>
+					</div>
+					<div class="more-info-transaction">
+						<label>Отправитель:</label>
+						<label>0000 0000 0000 0000</label>
+					</div>
+				</div>
+				<!-- ----------- другая транзакция ------------------- -->
+				<div class="one-transaction">
+					<div class="main-info-transaction">
+						<div>
+							<label class="open-trsnsaction">∧</label>
+							<label class="time-transaction">10:30</label>
+							<label class="name-transaction">Петя Чижиков ∨</label>
+						</div>
+						<div class="story-mony">
+							<p>- 2 000</p>
+							<p>0</p>
+						</div>
+					</div>
+					<div class="more-info-transaction">
+						<label>Получатель:</label>
+						<label>0000 0000 0000 0000</label>
+					</div>
+				</div>
+				<!-- ------------------------------ -->
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>&copy; Банк  Все права защищены!</p>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
