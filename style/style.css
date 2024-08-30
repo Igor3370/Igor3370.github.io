@@ -154,6 +154,9 @@ select {
     body {
         padding: 0;
     }
+    .story-mony {
+        width: 150px;
+    }
 }
 @media (max-width: 1000px) {
     body {
