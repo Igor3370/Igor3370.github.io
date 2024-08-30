@@ -159,7 +159,9 @@ select {
     body {
         padding: 0;
     }
-
+    .container-name {
+        width: 60%;
+    }
     .story-mony {
         width: 150px;
     }
