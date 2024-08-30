@@ -119,8 +119,7 @@ select {
     height: 20px;
 }
 
-.story-head,
-.main-info-transaction {
+.story-head {
     border: solid 1px;
     display: flex;
     justify-content: space-between;
@@ -139,12 +138,17 @@ select {
     font-size: 18px;
     font-weight: bold;
 }
-
+.main-info-transaction {
+    position: relative;
+    padding: 10px;
+}
 .story-mony {
+    position: absolute;
     display: flex;
     justify-content: space-between;
     width: 200px;
     border: solid 1px;
+    right: 0;
 }
 
 @media (max-width: 650px) {
