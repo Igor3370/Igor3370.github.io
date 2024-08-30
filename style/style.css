@@ -141,7 +141,7 @@ select {
     display: flex;
     justify-content: space-between;
     width: 200px;
-    border: solid 1px;
+
     right: 0;
     top: 50%;
     -webkit-transform: translate(-5%, -50%);
@@ -161,7 +161,7 @@ select {
     }
 
     .story-mony {
-        width: 120px;
+        width: 150px;
     }
 }
 
