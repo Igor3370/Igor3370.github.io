@@ -145,24 +145,16 @@ select {
 }
 
 @media (max-width: 650px) {
-    .period {
-        display: flex;
-        flex-direction: column;
+    select {
+        width: 90px;     
     }
-
-    .year {
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    .month {
-        margin-bottom: 7px;
+    body {
+        padding: 0;
     }
 }
 @media (max-width: 1000px) {
     body {
-        width: 100%;
-        padding: 0;
+        width: 100%;  
     }
 }
 
