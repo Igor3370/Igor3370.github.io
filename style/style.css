@@ -142,6 +142,9 @@ select {
     position: relative;
     padding: 10px;
 }
+.container-name {
+    width: 70%;
+}
 .story-mony {
     position: absolute;
     display: flex;
