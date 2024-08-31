@@ -1,5 +1,5 @@
 
-// ---- скрыть / показать историю платежей -------
+// ---- скрыть / показать платежи и историю платежей -------
 var div_history = document.getElementById('history');
 var div_payments = document.getElementById('payments');
 var btn_show_payments = document.getElementById('show-payments');
@@ -25,6 +25,8 @@ show_back.onclick = () => {
     hide_header.style.display = 'block';
     hide_logo.style.display = 'block';
     show_back.style.display = 'none';
+    div_payments.style.display = 'none';
+    div_history.style.display = 'block';
 };
 //--------------------------------------------
 // ------- работа с платежами ----------------
