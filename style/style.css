@@ -163,6 +163,7 @@ select {
 #payments {
     border: solid 1px;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     height: 100px;
 }
@@ -200,6 +201,14 @@ input {
     }
     .action {
         width: auto;
+    }
+    #payments {
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+    }
+    .addressee, .transfer-amount {
+        flex-grow: 1;
     }
 }
 
