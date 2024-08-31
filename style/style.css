@@ -85,18 +85,25 @@ footer {
     margin: 10px;
 }
 
+.action {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 400px;
+}
+#show-payments, #show-history {
+    width: 100px;
+    height: 25px;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
 select {
     margin-left: 5px;
-    border: solid 1px #517B97;
-    outline: 0;
-    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #CAD9E3), to(#FFFFFF));
-    background: -moz-linear-gradient(top, #FFFFFF, #CAD9E3 1px, #FFFFFF 25px);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
     width: 150px;
     border-radius: 5px;
     height: 20px;
+    border: solid 1px;
 }
 
 .period {
@@ -106,7 +113,13 @@ select {
     border-width: 1px;
 }
 
-.search {
+#search {
+    margin-left: 10px;
+    width: 70px;
+    height: 20px;
+}
+
+.color-button {
     border: solid 1px #517B97;
     border-radius: 5px;
     background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #CAD9E3), to(#FFFFFF));
@@ -114,9 +127,6 @@ select {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
     -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-    margin-left: 10px;
-    width: 70px;
-    height: 20px;
 }
 
 .story-head,
@@ -136,7 +146,6 @@ select {
     overflow: hidden;
     width: 70%;
 }
-
 .story-mony {
     position: absolute;
     display: flex;
@@ -151,7 +160,28 @@ select {
     -o-transform: translate(-5%, -50%);
     transform: translate(-5%, -50%);
 }
-
+#payments {
+    border: solid 1px;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
+.addressee, .transfer-amount {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+input {
+    font-size: 20px;
+    background: rgb(226, 226, 226);
+    border-bottom: solid 1px;
+}
+.name-receiver {
+    border: 0;
+    border-radius: 0;
+    border-bottom: solid 1px;
+    width: 180px;
+}
 @media (max-width: 650px) {
     select {
         width: 90px;
@@ -160,11 +190,16 @@ select {
     body {
         padding: 0;
     }
+
     .container-name {
         width: 50%;
     }
+
     .story-mony {
         width: 150px;
+    }
+    .action {
+        width: auto;
     }
 }
 
