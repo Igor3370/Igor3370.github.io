@@ -122,7 +122,7 @@
 			<div class="addressee">
 				<p>Карта получателя:</p>
 				<!-- только цифры и пробелы, не более 19 символов -->
-				<p><input id="imput-num-card" type="number" placeholder="0000 0000 0000 0000" maxlength="19"></p>
+				<p><input id="imput-num-card" type="tel" inputmode="tel" placeholder="0000 0000 0000 0000" maxlength="19"></p>
 				<div>
 					<label>name:</label>
 					<select class="name-receiver" name="year">
@@ -137,7 +137,7 @@
 			<div class="transfer-amount">
 				<p>Сумма, SYM</p>
 				<!-- только цифры, 0 - не первая, не более 6 символов -->
-				<p><input id="imput-send-mony" type="number" placeholder="1000" maxlength="6" oninput="replacer(this)"></p>
+				<p><input id="imput-send-mony" type="tel" inputmode="tel" placeholder="1000" maxlength="6" oninput="replacer(this)"></p>
 				<button id="send-mony">Перевести</button>
 			</div>
 		</div>
