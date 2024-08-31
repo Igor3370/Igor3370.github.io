@@ -4,6 +4,9 @@ var div_history = document.getElementById('history');
 var div_payments = document.getElementById('payments');
 var btn_show_payments = document.getElementById('show-payments');
 var btn_show_history = document.getElementById('show-history');
+var hide_header = document.querySelector('header');
+var hide_logo = document.getElementById('logo-panel');
+var show_back = document.getElementById('back');
 
 btn_show_history.onclick = () => {
     div_payments.style.display = 'none';
@@ -12,6 +15,16 @@ btn_show_history.onclick = () => {
 btn_show_payments.onclick = () => {
     div_history.style.display = 'none';
     div_payments.style.display = 'flex';
+    if (hide_header.offsetWidth <= 650) {
+        hide_header.style.display = 'none';
+        hide_logo.style.display = 'none';
+        show_back.style.display = 'block';
+    }
+};
+show_back.onclick = () => {
+    hide_header.style.display = 'block';
+    hide_logo.style.display = 'block';
+    show_back.style.display = 'none';
 };
 //--------------------------------------------
 // ------- работа с платежами ----------------

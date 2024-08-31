@@ -91,13 +91,16 @@ footer {
     padding: 10px;
     width: 400px;
 }
-#show-payments, #show-history {
+#show-payments, #show-history, #back {
     width: 100px;
     height: 25px;
     border: solid 1px;
     border-radius: 5px;
 }
-
+#back {
+    display: none;
+    width: 50px;
+}
 select {
     margin-left: 5px;
     width: 150px;
@@ -182,6 +185,9 @@ input {
     border-radius: 0;
     border-bottom: solid 1px;
     width: 180px;
+}
+#send-mony {
+    height: 25px;
 }
 @media (max-width: 650px) {
     select {
