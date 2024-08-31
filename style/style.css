@@ -33,7 +33,7 @@ footer {
 }
 
 /*---------- header start --------------*/
-.logo {
+#logo-panel{
     display: flex;
     justify-content: space-between;
 
@@ -215,6 +215,10 @@ input {
     }
     .addressee, .transfer-amount {
         flex-grow: 1;
+    }
+    #send-mony {
+        height: 35px;
+        margin-top: 10px;
     }
 }
 

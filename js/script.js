@@ -23,7 +23,7 @@ btn_show_payments.onclick = () => {
 };
 show_back.onclick = () => {
     hide_header.style.display = 'block';
-    hide_logo.style.display = 'block';
+    hide_logo.style.display = 'flex';
     show_back.style.display = 'none';
     div_payments.style.display = 'none';
     div_history.style.display = 'block';
