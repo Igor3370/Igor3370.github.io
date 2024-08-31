@@ -33,7 +33,7 @@ footer {
 }
 
 /*---------- header start --------------*/
-#logo-panel{
+#logo-panel, .logo{
     display: flex;
     justify-content: space-between;
 
