@@ -5,17 +5,24 @@ html {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, serif;
+    background: rgb(235, 244, 253);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
     width: 80%;
-    border-style: solid;
-    border-width: 1px;
+    /* border-style: solid;
+    border-width: 1px; */
 }
 
-header,
-section,
+header {
+    background: #FFFFFF;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 5px -1px #000000;
+}
+section {
+
+}
 footer {
     border-style: solid;
     border-width: 1px;
@@ -41,8 +48,8 @@ footer {
     padding-right: 7px;
     padding-bottom: 3px;
 
-    border-style: solid;
-    border-width: 1px;
+    /* border-style: solid;
+    border-width: 1px; */
 }
 
 .logo-name {
@@ -104,16 +111,17 @@ footer {
 select {
     margin-left: 5px;
     width: 150px;
-    border-radius: 5px;
     height: 20px;
-    border: solid 1px;
+    border-bottom: solid 1px;
+    cursor: pointer;
 }
 
 .period {
+    background: rgb(255, 255, 255);
     display: flex;
     padding: 7px;
-    border-style: solid;
-    border-width: 1px;
+    /* border-style: solid;
+    border-width: 1px; */
 }
 
 #search {
@@ -132,17 +140,41 @@ select {
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 }
 
-.story-head,
-.main-info-transaction {
+.story-head {
     position: relative;
-    border: solid 1px;
+    background: rgb(235, 235, 235);
     padding: 10px;
+    margin-top: 10px;
 }
 
-.date-transaction,
-.more-info-transaction {
-    border: solid 1px;
+.date-transaction {
+    background: rgb(195, 232, 195);
     padding: 7px;
+}
+.name-transaction {
+    display: inline-block;
+    padding: 2px;
+}
+.one-transaction {
+    border: solid 1px;
+    border-top: none;
+    border-color: rgb(196, 196, 196);
+}
+.main-info-transaction {
+    position: relative;
+    background: rgb(245, 245, 245);
+    /* border: solid 1px; */
+    padding: 10px;
+    cursor: pointer;
+}
+.more-info-transaction {
+    position: relative;
+    background: white;
+    height: 2.5em;
+    /* border: solid 1px; */
+    padding: 0.7em;
+    margin-top: -2.5em;
+    z-index: -100;
 }
 
 .container-name {
