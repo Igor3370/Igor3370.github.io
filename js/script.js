@@ -209,15 +209,16 @@ function createTransaction(date) {
 }
 createTransaction('8 августа');
 // ----- Скрыть / Показать Вход / Регистрация --------------
-function loginRegister(){
-    var login = document.getElementById("loginNone");
-    var register = document.getElementById("registerNone");
+var login = document.getElementById("loginNone");
+var register = document.getElementById("registerNone");
+function loginRegister(){  
     login.style.display = 'none';
     register.style.display = 'block';
 }
 function registerLogin(){
-    var login = document.getElementById("loginNone");
-    var register = document.getElementById("registerNone");
     login.style.display = 'block';
     register.style.display = 'none';
+}
+function signIn(){
+    login.style.display = 'block';
 }

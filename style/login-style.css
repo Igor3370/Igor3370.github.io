@@ -3,7 +3,7 @@
     font-family: 'Poppins';
     src:url('fonts/Poppins-Medium.ttf');
 }
-#registerNone {
+#loginNone, #registerNone {
     display: none;
 }
 .login {
