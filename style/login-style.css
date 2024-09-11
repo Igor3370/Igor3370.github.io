@@ -3,17 +3,6 @@
     font-family: 'Poppins';
     src:url('fonts/Poppins-Medium.ttf');
 }
-
-/* body {
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('img.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-} */
 .wrapper {
     font-family: "Poppins", sans-serif;
     position: absolute;
@@ -53,10 +42,6 @@
 }
 .input-box img {
     position: absolute;
-    /* right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px; */
     right: 20px;
     height: 37%;
     top: 30%;
@@ -107,5 +92,9 @@
 @media (max-width: 650px){
     .wrapper {
         width: 320px;
+    }
+    .remember-forgot {
+        flex-direction: column;
+        height: 40px;
     }
 }
