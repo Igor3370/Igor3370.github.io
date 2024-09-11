@@ -158,13 +158,13 @@
 				</div>
 			</div>
 		</div>
-		<div class="wrapper">
+		<div id="loginNone" class="login">
 			<form action="">
 				<h1>Login</h1>
 				<div class="input-box">
 					<input type="text" placeholder="username" required>
 					<!-- <i class='bx bxs-user'></i> -->
-					 <img src="user_gray.png" alt="">
+					<img src="user_gray.png" alt="">
 				</div>
 				<div class="input-box">
 					<input type="password" placeholder="password" required>
@@ -173,12 +173,44 @@
 				</div>
 				<div class="remember-forgot">
 					<label><input type="checkbox"> Remember me</label>
-					<a href="#">Forgot password?</a>
+					<a class="forgot-none" href="#">Forgot password?</a>
 				</div>
 				<button type="submit" class="btn">Login</button>
-				<div class="register-link"><p>Don't have an account?<a href="#"> Register</a></p></div>
+				<div class="register-link">
+					<p>Don't have an account?<a href="#" onclick="loginRegister()"> Register</a></p>
+				</div>
+				<a class="forgoten-none" href="#">Forgot password?</a>
 			</form>
 		</div>
+		<div id="registerNone" class="login">
+			<form action="">
+				<h1>Register</h1>
+				<div class="input-box">
+					<input type="text" placeholder="username" required>
+					<!-- <i class='bx bxs-user'></i> -->
+					<img src="user_gray.png" alt="">
+				</div>
+				<div class="input-box">
+					<input type="text" placeholder="email" required>
+					<!-- <i class='bx bxs-user'></i> -->
+					<img src="email.png" alt="">
+				</div>
+				<div class="input-box">
+					<input type="password" placeholder="password" required>
+					<!-- <i class='bx bxs-lock-alt'></i> -->
+					<img src="lock_gray.png" alt="">
+				</div>
+				<div class="input-box">
+					<input type="password" placeholder="password" required>
+					<!-- <i class='bx bxs-lock-alt'></i> -->
+					<img src="lock_gray.png" alt="">
+				</div>
+				<button type="submit" class="btn">Register</button>
+				<div class="register-link">
+					<p>Have an account?<a href="#" onclick="registerLogin()"> Login</a></p>
+				</div>
+			</form>
+		</div>		
 	</section>
 	<footer>
 		<p>&copy; 2024 - Банк - Все права защищены!</p>

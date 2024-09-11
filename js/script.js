@@ -96,7 +96,7 @@ function actionShow(idShow) {
     }
     console.log(openStrings);
 }
-// ----------------------------------------------------------------
+// -------- Динамическое создание истории платежей --------------
 document.getElementById('search').onclick = function () {
     var parent = document.querySelector('#story').parentNode;
     parent.removeChild(document.querySelector('#story')); // элемент удаляется деликатно и с уважением
@@ -208,3 +208,16 @@ function createTransaction(date) {
     createOneTransaction('18:35', 'Иван Крузенштейн', '+ 1 200 000', '1 200 000', '0000 0000 0000 0000', 'actionShow6');
 }
 createTransaction('8 августа');
+// ----- Скрыть / Показать Вход / Регистрация --------------
+function loginRegister(){
+    var login = document.getElementById("loginNone");
+    var register = document.getElementById("registerNone");
+    login.style.display = 'none';
+    register.style.display = 'block';
+}
+function registerLogin(){
+    var login = document.getElementById("loginNone");
+    var register = document.getElementById("registerNone");
+    login.style.display = 'block';
+    register.style.display = 'none';
+}
