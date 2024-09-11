@@ -25,134 +25,136 @@
 		</div>
 	</header>
 	<section>
-		<div id="logo-panel">
-			<div class="logo-name">
-				<h2>Карта банка</h2>
-				<div class="logo-namber">
-					<label>0000 0000 0000 0000</label>
-					<label>&nbsp;&nbsp;&nbsp;</label>
-				</div>
-				<div class="logo-namber">
-					<label>Баланс: 0 000 SYM</label>
-				</div>
-			</div>
-			<div class="card">
-				<a href="##"><img class="img-card" src="images/reload2.png" alt=""></a>
-				<a href="###"><img class="img-card" src="images/settings2.png" alt=""></a>
-			</div>
-		</div>
-		<div class="action">
-			<button id="back">
-				<p style="font-size: 25px; margin-top: -7px;">&#11013;</p>
-			</button>
-			<button id="show-payments">Платежи</button>
-			<button id="show-history">История</button>
-		</div>
-		<div id="history">
-			<div class="period">
-				<label>Период:</label>
-				<select name="year">
-					<option value="2024">2024</option>
-					<option value="2023">2023</option>
-					<option value="2022">2022</option>
-					<option value="2023">2023</option>
-					<option value="2022">2022</option>
-				</select>
-				<select name="month">
-					<option value="Август">Август</option>
-					<option value="Июль">Июль</option>
-					<option value="Июнь">Июнь</option>
-					<option value="Май">Май</option>
-					<option value="Апрель">Апрель</option>
-				</select>
-				<button id="search">Поиск</button>
-			</div>
-			<div id="story">
-				<div class="story-head">
-					<p>Описание платежа</p>
-					<div class="story-mony">
-						<p>Сумма, SYM</p>
-						<p>Остаток, SYM</p>
-					</div>
-				</div>
-				<div id="asdf" class="date-transaction">2 августа</div>
-				<!-- ------ одна транзакция------------------------ -->
-				<div class="one-transaction">
-					<div class="main-info-transaction" onclick="actionShow('action-Show')">
-						<div class="container-name">
-							<label class="time-transaction">11:30</label>
-							<p class="name-transaction">ВасяПупкин ПупкинПупкинПупкин</p>
-						</div>
-						<div class="story-mony">
-							<p>+ 1 200 000</p>
-							<p>1 200 000</p>
-						</div>
-					</div>
-					<div id="action-Show" class="more-info-transaction">
-						<label>Отправитель:</label>
+		<div class="site">
+			<div id="logo-panel">
+				<div class="logo-name">
+					<h2>Карта банка</h2>
+					<div class="logo-namber">
 						<label>0000 0000 0000 0000</label>
+						<label>&nbsp;&nbsp;&nbsp;</label>
+					</div>
+					<div class="logo-namber">
+						<label>Баланс: 0 000 SYM</label>
 					</div>
 				</div>
-				<!-- ----------- другая транзакция ------------------- -->
-				<div class="one-transaction">
-					<div class="main-info-transaction" onclick="actionShow('action-Show1')">
-						<div class="container-name">
-							<label class="time-transaction">07:25</label>
-							<p class="name-transaction">Петя Рыжиков</p>
-						</div>
-						<div class="story-mony">
-							<p>- 1 200 000</p>
-							<p>0</p>
-						</div>
-					</div>
-					<div id="action-Show1" class="more-info-transaction">
-						<label>Получатель:</label>
-						<label>0000 0000 0000 0000</label>
-					</div>
+				<div class="card">
+					<a href="##"><img class="img-card" src="images/reload2.png" alt=""></a>
+					<a href="###"><img class="img-card" src="images/settings2.png" alt=""></a>
 				</div>
-				<!-- ----------- другая транзакция ------------------- -->
-				<div class="one-transaction">
-					<div class="main-info-transaction" onclick="actionShow('action-Show2')">
-						<div class="container-name">
-							<label class="time-transaction">07:25</label>
-							<p class="name-transaction">Петя Рыжиков</p>
-						</div>
-						<div class="story-mony">
-							<p>- 1 200 000</p>
-							<p>0</p>
-						</div>
-					</div>
-					<div id="action-Show2" class="more-info-transaction">
-						<label>Получатель:</label>
-						<label>0000 0000 0000 0000</label>
-					</div>
-				</div>
-				<!-- ------------------------------ -->
 			</div>
-		</div>
-		<div id="payments" style="display: none;">
-			<div class="addressee">
-				<p>Карта получателя:</p>
-				<!-- только цифры и пробелы, не более 19 символов -->
-				<p><input id="imput-num-card" type="tel" inputmode="tel" placeholder="0000 0000 0000 0000"
-						maxlength="19"></p>
-				<div style="margin-top: 5px;">
-					<label>name:</label>
-					<select class="name-receiver" name="year">
+			<div class="action">
+				<button id="back">
+					<p style="font-size: 25px; margin-top: -7px;">&#11013;</p>
+				</button>
+				<button id="show-payments">Платежи</button>
+				<button id="show-history">История</button>
+			</div>
+			<div id="history">
+				<div class="period">
+					<label>Период:</label>
+					<select name="year">
 						<option value="2024">2024</option>
 						<option value="2023">2023</option>
 						<option value="2022">2022</option>
 						<option value="2023">2023</option>
 						<option value="2022">2022</option>
 					</select>
+					<select name="month">
+						<option value="Август">Август</option>
+						<option value="Июль">Июль</option>
+						<option value="Июнь">Июнь</option>
+						<option value="Май">Май</option>
+						<option value="Апрель">Апрель</option>
+					</select>
+					<button id="search">Поиск</button>
+				</div>
+				<div id="story">
+					<div class="story-head">
+						<p>Описание платежа</p>
+						<div class="story-mony">
+							<p>Сумма, SYM</p>
+							<p>Остаток, SYM</p>
+						</div>
+					</div>
+					<div id="asdf" class="date-transaction">2 августа</div>
+					<!-- ------ одна транзакция------------------------ -->
+					<div class="one-transaction">
+						<div class="main-info-transaction" onclick="actionShow('action-Show')">
+							<div class="container-name">
+								<label class="time-transaction">11:30</label>
+								<p class="name-transaction">ВасяПупкин ПупкинПупкинПупкин</p>
+							</div>
+							<div class="story-mony">
+								<p>+ 1 200 000</p>
+								<p>1 200 000</p>
+							</div>
+						</div>
+						<div id="action-Show" class="more-info-transaction">
+							<label>Отправитель:</label>
+							<label>0000 0000 0000 0000</label>
+						</div>
+					</div>
+					<!-- ----------- другая транзакция ------------------- -->
+					<div class="one-transaction">
+						<div class="main-info-transaction" onclick="actionShow('action-Show1')">
+							<div class="container-name">
+								<label class="time-transaction">07:25</label>
+								<p class="name-transaction">Петя Рыжиков</p>
+							</div>
+							<div class="story-mony">
+								<p>- 1 200 000</p>
+								<p>0</p>
+							</div>
+						</div>
+						<div id="action-Show1" class="more-info-transaction">
+							<label>Получатель:</label>
+							<label>0000 0000 0000 0000</label>
+						</div>
+					</div>
+					<!-- ----------- другая транзакция ------------------- -->
+					<div class="one-transaction">
+						<div class="main-info-transaction" onclick="actionShow('action-Show2')">
+							<div class="container-name">
+								<label class="time-transaction">07:25</label>
+								<p class="name-transaction">Петя Рыжиков</p>
+							</div>
+							<div class="story-mony">
+								<p>- 1 200 000</p>
+								<p>0</p>
+							</div>
+						</div>
+						<div id="action-Show2" class="more-info-transaction">
+							<label>Получатель:</label>
+							<label>0000 0000 0000 0000</label>
+						</div>
+					</div>
+					<!-- ------------------------------ -->
 				</div>
 			</div>
-			<div class="transfer-amount">
-				<p>Сумма, SYM</p>
-				<!-- только цифры, 0 - не первая, не более 6 символов -->
-				<p><input id="imput-send-mony" type="tel" inputmode="tel" placeholder="1000" maxlength="6"
-						oninput="replacer(this)"></p>
-				<button id="send-mony">Перевести</button>
+			<div id="payments" style="display: none;">
+				<div class="addressee">
+					<p>Карта получателя:</p>
+					<!-- только цифры и пробелы, не более 19 символов -->
+					<p><input id="imput-num-card" type="tel" inputmode="tel" placeholder="0000 0000 0000 0000"
+							maxlength="19"></p>
+					<div style="margin-top: 5px;">
+						<label>name:</label>
+						<select class="name-receiver" name="year">
+							<option value="2024">2024</option>
+							<option value="2023">2023</option>
+							<option value="2022">2022</option>
+							<option value="2023">2023</option>
+							<option value="2022">2022</option>
+						</select>
+					</div>
+				</div>
+				<div class="transfer-amount">
+					<p>Сумма, SYM</p>
+					<!-- только цифры, 0 - не первая, не более 6 символов -->
+					<p><input id="imput-send-mony" type="tel" inputmode="tel" placeholder="1000" maxlength="6"
+							oninput="replacer(this)"></p>
+					<button id="send-mony">Перевести</button>
+				</div>
 			</div>
 		</div>
 	</section>
