@@ -89,12 +89,25 @@
 .register-link p a:hover {
     text-decoration: underline;
 }
+.forgot-none {
+    display: block;
+}
+.forgoten-none {
+    display: none;
+}
 @media (max-width: 650px){
     .wrapper {
         width: 320px;
     }
-    .remember-forgot {
-        flex-direction: column;
-        height: 40px;
+    .forgot-none {
+        display: none;
+    }
+    .forgoten-none {
+        display: block;
+        color: #333;
+        text-decoration: none;
+        font-size: 14.5px;
+        font-weight: 600;
+        text-align: center;
     }
 }
