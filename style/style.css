@@ -187,6 +187,7 @@ select {
     overflow: hidden;
     width: 70%;
 }
+
 .story-mony {
     position: absolute;
     display: flex;
@@ -227,6 +228,11 @@ input {
 #send-mony {
     height: 25px;
 }
+@media (max-width: 450px) {
+    .discraibe-transaction {
+        width: 100px;
+    }
+}
 @media (max-width: 650px) {
     select {
         width: 90px;
@@ -239,7 +245,6 @@ input {
     .container-name {
         width: 50%;
     }
-
     .story-mony {
         width: 180px;
     }
